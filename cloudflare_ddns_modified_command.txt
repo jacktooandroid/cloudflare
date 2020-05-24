@@ -2,6 +2,9 @@
 sudo wget https://raw.githubusercontent.com/jacktooandroid/cloudflare/master/cloudflare_ddns_modified.sh -O /home/cloudflare_ddns_modified.sh
 sudo curl https://raw.githubusercontent.com/jacktooandroid/cloudflare/master/cloudflare_ddns_modified.sh -o /home/cloudflare_ddns_modified.sh
 
+sudo wget https://raw.githubusercontent.com/jacktooandroid/cloudflare/master/cloudflare_ddns_modified-smokeping.sh -O /home/cloudflare_ddns_modified-smokeping.sh
+sudo curl https://raw.githubusercontent.com/jacktooandroid/cloudflare/master/cloudflare_ddns_modified-smokeping.sh -o /home/cloudflare_ddns_modified-smokeping.sh
+
 sudo wget https://raw.githubusercontent.com/jacktooandroid/cloudflare/master/cloudflare_ddns_modified-uuc.sh -O /home/cloudflare_ddns_modified-uuc.sh
 sudo curl https://raw.githubusercontent.com/jacktooandroid/cloudflare/master/cloudflare_ddns_modified-uuc.sh -o /home/cloudflare_ddns_modified-uuc.sh
 
@@ -10,6 +13,8 @@ sudo curl https://raw.githubusercontent.com/jacktooandroid/cloudflare/master/clo
 
 #crontab command
 * * * * * bash /home/cloudflare_ddns_modified.sh
+
+* * * * * bash /home/cloudflare_ddns_modified-smokeping.sh
 
 * * * * * bash /home/cloudflare_ddns_modified-uuc.sh
 
