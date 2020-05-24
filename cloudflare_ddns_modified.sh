@@ -22,6 +22,7 @@ PUBLIC_IPv4=$(curl --silent https://v4.ident.me/) || exit 1
 #If the public ip has not changed, nothing needs to be done, exit.
 if [ "$PUBLIC_IPv4" = "$RECORDED_IPv4" ]
     then
+        echo $PUBLIC_IPv4 > $IPv4_RECORD
         #IPv6
         AAAA_RECORD_NAME=$A_RECORD_NAME
         # Retrieve the last recorded public IP address
@@ -33,6 +34,7 @@ if [ "$PUBLIC_IPv4" = "$RECORDED_IPv4" ]
 
         #If the public ip has not changed, nothing needs to be done, exit.
         if [ "$PUBLIC_IPv6" = "$RECORDED_IPv6" ]; then
+            echo $PUBLIC_IPv6 > $IPv6_RECORD
             exit 0
         fi
 
@@ -88,6 +90,7 @@ PUBLIC_IPv6=$(curl --silent https://v6.ident.me/) || exit 1
 
 #If the public ip has not changed, nothing needs to be done, exit.
 if [ "$PUBLIC_IPv6" = "$RECORDED_IPv6" ]; then
+    echo $PUBLIC_IPv6 > $IPv6_RECORD
     exit 0
 fi
 
