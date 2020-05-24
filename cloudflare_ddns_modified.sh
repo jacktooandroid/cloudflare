@@ -17,7 +17,7 @@ IPv4_RECORD="/tmp/ipv4-record"
 RECORDED_IPv4=`cat $IPv4_RECORD`
 
 # Fetch the current public IP address
-PUBLIC_IPv4=$(curl --silent https://v4.ident.me/) || exit 1
+PUBLIC_IPv4=$(curl --silent https://v4.ident.me/)
 
 #If the public ip has not changed, nothing needs to be done, exit.
 if [ "$PUBLIC_IPv4" = "$RECORDED_IPv4" ]
@@ -30,7 +30,7 @@ if [ "$PUBLIC_IPv4" = "$RECORDED_IPv4" ]
         RECORDED_IPv6=`cat $IPv6_RECORD`
 
         # Fetch the current public IP address
-        PUBLIC_IPv6=$(curl --silent https://v6.ident.me/) || exit 1
+        PUBLIC_IPv6=$(curl --silent https://v6.ident.me/)
 
         #If the public ip has not changed, nothing needs to be done, exit.
         if [ "$PUBLIC_IPv6" = "$RECORDED_IPv6" ]; then
@@ -86,7 +86,7 @@ IPv6_RECORD="/tmp/ipv6-record"
 RECORDED_IPv6=`cat $IPv6_RECORD`
 
 # Fetch the current public IP address
-PUBLIC_IPv6=$(curl --silent https://v6.ident.me/) || exit 1
+PUBLIC_IPv6=$(curl --silent https://v6.ident.me/)
 
 #If the public ip has not changed, nothing needs to be done, exit.
 if [ "$PUBLIC_IPv6" = "$RECORDED_IPv6" ]; then
