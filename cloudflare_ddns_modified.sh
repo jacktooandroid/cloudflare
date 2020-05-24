@@ -1,4 +1,4 @@
-#/usr/bin/env sh
+#!/bin/bash
 
 #Original Author: https://github.com/dcerisano/cloudflare-dynamic-dns
 #Modified for personal use.
