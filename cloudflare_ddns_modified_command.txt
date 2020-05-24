@@ -1,3 +1,16 @@
 #Downloading Cloudflare DDNS Script
 sudo wget https://raw.githubusercontent.com/jacktooandroid/cloudflare/master/cloudflare_ddns_modified.sh -O /home/cloudflare_ddns_modified.sh
 sudo curl https://raw.githubusercontent.com/jacktooandroid/cloudflare/master/cloudflare_ddns_modified.sh -o /home/cloudflare_ddns_modified.sh
+
+sudo wget https://raw.githubusercontent.com/jacktooandroid/cloudflare/master/cloudflare_ddns_modified-vpn.sh -O /home/cloudflare_ddns_modified-vpn.sh
+sudo curl https://raw.githubusercontent.com/jacktooandroid/cloudflare/master/cloudflare_ddns_modified-vpn.sh -o /home/cloudflare_ddns_modified-vpn.sh
+
+sudo wget https://raw.githubusercontent.com/jacktooandroid/cloudflare/master/cloudflare_ddns_modified-uuc.sh -O /home/cloudflare_ddns_modified-uuc.sh
+sudo curl https://raw.githubusercontent.com/jacktooandroid/cloudflare/master/cloudflare_ddns_modified-uuc.sh -o /home/cloudflare_ddns_modified-uuc.sh
+
+#crontab command
+#bash /home/cloudflare_ddns_modified.sh
+
+#bash /home/cloudflare_ddns_modified-vpn.sh
+
+#bash /home/cloudflare_ddns_modified-uuc.sh
