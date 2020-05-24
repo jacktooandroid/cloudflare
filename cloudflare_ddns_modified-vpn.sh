@@ -13,7 +13,7 @@
 
 #IPv4
 # Retrieve the last recorded public IP address
-IPv4_RECORD="/tmp/ipv-record-vpn"
+IPv4_RECORD="/tmp/ipv4-record-vpn"
 RECORDED_IPv4=`cat $IPv4_RECORD`
 
 # Fetch the current public IP address
