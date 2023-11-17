@@ -15,7 +15,7 @@ IPV4_RECORD="/tmp/ipv4-record-vpn"
 RECORDED_IPV4=`cat $IPV4_RECORD`
 
 # Fetch the current public IPv4 address
-PUBLIC_IPV4=$(curl -4 http://www.ident.me/)
+PUBLIC_IPV4=$(curl -4 https://ident.me/)
 
 if [ "$PUBLIC_IPV4" = "$RECORDED_IPV4" ]
     then
@@ -44,7 +44,7 @@ IPV6_RECORD="/tmp/ipv6-record-vpn"
 RECORDED_IPV6=`cat $IPV6_RECORD`
 
 # Fetch the current public IPv6 address
-PUBLIC_IPV6=$(curl -6 http://www.ident.me/)
+PUBLIC_IPV6=$(curl -6 https://ident.me/)
 
 if [ "$PUBLIC_IPV6" = "$RECORDED_IPV6" ]
     then
